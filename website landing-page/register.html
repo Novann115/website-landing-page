@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - Wisata Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Container Register -->
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+      <!-- Header Form -->
+      <h2 class="text-3xl font-bold text-center text-blue-400 mb-6">Daftar Akun</h2>
+      <p class="text-center text-gray-600 mb-6">Buat akun untuk fitur Wisata Indonesia</p>
+
+      <!-- Form -->
+      <form action="/register" method="POST" class="space-y-5">
+        <!-- Nama Lengkap -->
+        <div>
+          <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+          <input type="text" id="name" name="name" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+          <input type="email" id="email" name="email" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+          <input type="password" id="password" name="password" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
+        </div>
+
+        <!-- Konfirmasi Password -->
+        <div>
+          <label for="confirm_password" class="block text-gray-700 font-medium mb-2">Konfirmasi Password</label>
+          <input type="password" id="confirm_password" name="confirm_password" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
+        </div>
+
+        <!-- Checkbox Terms -->
+        <div class="flex items-center space-x-2">
+          <input type="checkbox" id="terms" name="terms" required class="form-checkbox h-4 w-4 text-red-500">
+          <label for="terms" class="text-gray-600 text-sm">Saya setuju dengan <a href="#" class="text-red-500 hover:underline">syarat & ketentuan</a></label>
+        </div>
+
+        <!-- Button Daftar -->
+        <button type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg shadow-md transition transform hover:-translate-y-1">
+          Daftar
+        </button>
+      </form>
+
+      <!-- Login Link -->
+      <p class="text-center text-gray-600 mt-6">Sudah punya akun? 
+        <a href="/login" class="text-red-500 hover:underline">Login sekarang</a>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
